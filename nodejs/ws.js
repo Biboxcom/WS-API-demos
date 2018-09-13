@@ -62,11 +62,17 @@ function subscribe(ws) {
     }
 }
 
+function ping(ws) {
+    let now = new Date().getTime();
+    ws.ping(now);
+}
+
 function init() {
     let ws = new WebSocket(WS_URL);
     ws.on('open', () => {
         console.log('open');
         subscribe(ws);
+        ping(ws);
     });
 
     ws.on('message', (data) => {
@@ -87,6 +93,11 @@ function init() {
     ws.on('error', err => {
         console.log('error', err);
         init();
+    });
+
+    ws.on('pong', ts => {
+        let msg = ts.toString('utf8');
+        console.log('pong ', msg);
     });
 }
 
