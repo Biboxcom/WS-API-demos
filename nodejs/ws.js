@@ -2,8 +2,7 @@
 const WebSocket = require('ws');
 const pako = require('pako');
 
-// const WS_URL = 'ws://127.0.0.1:33023';
-const WS_URL = 'wss://mopush.bibox360.com';
+const WS_URL = 'wss://push.bibox.com/';
 
 let WSClient = {};
 
