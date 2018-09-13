@@ -1,1 +1,2 @@
-# WS-API-demos
+# README
+Bibox Websocket API demos.
