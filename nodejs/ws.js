@@ -4,10 +4,6 @@ const pako = require('pako');
 
 const WS_URL = 'wss://push.bibox.com/';
 
-let WSClient = {};
-
-exports.OrderBook = WSClient;
-
 function handle(msg) {
 
     let channel = msg.channel;
