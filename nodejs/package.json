@@ -12,7 +12,9 @@
   "author": "Bibox",
   "license": "ISC",
   "dependencies": {
+    "crypto-js": "^3.1.9-1",
     "pako": "^1.0.6",
-    "ws": "^6.0.0"
+    "ws": "^6.0.0",
+    "zlib": "^1.0.5"
   }
 }
