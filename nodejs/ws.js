@@ -60,7 +60,7 @@ function subscribe(ws) {
     // for (let pair of pairs) {
     //     ws.send(JSON.stringify({
     //         "event": "addChannel",
-    //         "channel": 'bibox_sub_spsot_' + pair + '_depth'
+    //         "channel": 'bibox_sub_spot_' + pair + '_depth'
     //     }));
     // }
     // // sub deals
