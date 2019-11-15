@@ -1,4 +1,4 @@
 # README
 Bibox Websocket API demos.
 
-[javasdk](https://github.com/Biboxcom/javasdk)
+* Java SDK [click here](https://github.com/Biboxcom/javasdk)
